@@ -1,0 +1,139 @@
+
+<!-- saved from url=(0027)https://listx.io/hfeuf -->
+<html lang="EN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="ListX - Shopping Lists on another level">
+<meta name="author" content="Klequex Software &amp; UX">
+<meta name="keywords" content="List, Shopping List, Free, Grocery List, Holidays, Planing, Food, ListX">
+<!-- jQuery -->
+<script src="offline_files/jquery.js"></script>
+<script>
+    $.getJSON("/api/users/me", function (data) {
+        if (data.success) {
+            window.doorbellOptions = {
+                hideEmail: true, // Optional, hides the email address field
+                email: data.user.email, // Optional, prepopulate the email address field
+                name: data.user.name, // Optional, the name of the user
+                properties: {
+                    userId: data.user._id
+                }
+            };
+        }
+    });
+    </script>
+<link rel="alternate" href="https://listx.io/language/en" hreflang="en-uk">
+<link rel="alternate" href="https://listx.io/language/en" hreflang="en-us">
+<link rel="alternate" href="https://listx.io/language/de" hreflang="de">
+<link rel="alternate" href="https://listx.io/language/fr" hreflang="fr">
+<link rel="alternate" href="https://listx.io/language/nl" hreflang="nl">
+<link href="offline_files/bootstrap.min.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="offline_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="offline_files/css" rel="stylesheet" type="text/css">
+<link href="offline_files/css(1)" rel="stylesheet" type="text/css">
+<link href="offline_files/css(2)" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#ff4c4c">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!-- jQuery -->
+<script src="offline_files/jquery.js"></script><style></style>
+    <title>List Settings - ListX - Shopping Lists on another level</title>
+
+    <link rel="stylesheet" href="offline_files/dashboard.css">
+    <!-- Theme JavaScript -->
+</head>
+<body class="vsc-initialized" cz-shortcut-listen="true">
+<!-- Navigation -->
+<div class="container">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="padding-top: 14px; background-color: #fff;">
+        <div class="container">
+
+            <div class="navbar-header">
+                <a href="https://listx.io/" class="header-image">
+                    <img src="offline_files/favicon.png" alt="ListX" height="40px">
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse  navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li>
+                        <a href="https://listx.io/dashboard">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="https://listx.io/devs">Developers</a>
+                    </li>
+                    <li>
+                        <a href="https://listx.io/docs/api">API</a>
+                    </li>
+                    <li>
+                        <a href="https://listx.io/support">Support</a>
+                    </li>
+                    <!--
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-element">
+                            <li><a href="/user">Settings</a></li>
+                            <li><a href="/feedback">Feedback</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </li>
+                    -->
+                    <li class="dropdown"><a href="https://listx.io/hfeuf#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-element">
+                            <li><a href="https://listx.io/user">Logged in as  <br><span style="font-weight: bold"></span></a></li>
+                            <li><a href="https://listx.io/user"><i class="fa fa-cog"></i> Settings</a></li>
+                            <li><a href="https://listx.io/feedback"><i class="fa fa-comments"></i> Feedback</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://listx.io/auth/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+</div>
+<div class="container">
+    <div class="listx-content">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Error</h1>
+            </div>
+        </div>
+        <div class="listx-content">
+            <div class="row">
+                <p>No Internet Connection <a href="https://listx.io/dashboard">Return to the Dashboard</a>, once you are connected again.</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- Bootstrap Core JavaScript -->
+<script src="offline_files/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="offline_files/jquery.easing.min.js"></script>
+
+
+
+
+
+</body></html>
